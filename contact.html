@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | PressCafe</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - PressCafe</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Lora&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="PressCafe Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CLIENTS</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
-        <li><a href="#">FAQS</a></li>
-        <li><a href="contact.html" class="active">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="contact-section">
-    <h1>CONTACT US</h1>
-    <div class="contact-container">
-      <div class="map">
-        <!-- Replace this iframe with the Google Map Embed code from https://google-map-generator.com -->
-        <iframe src="https://www.google.com/maps?q=Mirando%20Milano&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <div class="contact-info">
-        <p>1016 Strada Ottubre, Via Vergine,<br>Milano, 70-B Italia</p>
-        <p>+39 722 786 8799<br>customercare@presscafe.it</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <img src="images/logo2.png" alt="PressCafe Logo">
-        <p>Where your dream project becomes a reality</p>
-        <p>1016 Strada Ottubre, Via Vergine,<br>Milano, 70-B Italia</p>
-        <p>+39 722 786 8799<br>customercare@presscafe.it</p>
+  <header class="site-header">
+    <div class="wrap clearfix">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="PressCafe logo"></a>
       </div>
 
-      <div class="footer-right">
-        <p>AT PRESSCAFE WE CAN PRINT YOUR BOOK WHILE YOU WAIT AT OUR <strong>COMFORTABLE</strong> AND <strong>IMMERSIVE</strong> OUTLETS</p>
-        <div class="map-cards">
-          <div class="map-card">
-            <img src="images/map_ny.jpg" alt="New York Map">
-            <p>New York</p>
-          </div>
-          <div class="map-card">
-            <img src="images/map_milan.jpg" alt="Milan Map">
-            <p>Milan</p>
-          </div>
-        </div>
-        <ul class="footer-nav">
+      <nav class="main-nav">
+        <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="#">SERVICES</a></li>
           <li><a href="#">CLIENTS</a></li>
           <li><a href="#">TESTIMONIALS</a></li>
           <li><a href="#">FAQS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap contact-page">
+      <h1 class="contact-title">CONTACT US</h1>
+
+      <div class="contact-box clearfix">
+        <div class="map-holder">
+          <!-- Replace the iframe with the exact embed HTML obtained from google-map-generator.com -->
+          <iframe width="600" height="300" frameborder="0" style="border:0"
+            src="https://www.google.com/maps?q=Mirando%20Milano&z=13&output=embed" allowfullscreen>
+          </iframe>
+        </div>
+
+        <aside class="contact-details">
+          <p>1016 Strada Ottubre, Via Vergine,<br>Milano, 70-B Italia</p>
+          <p>+39 722 786 8799</p>
+          <p>customercare@presscafe.it</p>
+        </aside>
       </div>
     </div>
-    <p class="copyright">© COPYRIGHT 2025 PRESSCAFE | WEB DEVELOPMENT BY [YOUR NAME HERE]</p>
+  </main>
+
+  <!-- include same footer as index -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="wrap clearfix">
+
+        <div class="footer-left">
+          <img src="images/logo2.png" alt="PressCafe logo" class="footer-logo">
+          <p class="muted">Where your dream project becomes a reality</p>
+          <address>
+            1016 Strada Ottubre, Via Vergine,<br>
+            Milano, 70-B Italia
+          </address>
+          <p>+39 722 786 8799<br>customercare@presscafe.it</p>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-blurb">AT PRESSCAFE WE CAN PRINT YOUR BOOK WHILE YOU WAIT AT OUR <strong>COMFORTABLE</strong> AND <strong>IMMERSIVE</strong> OUTLETS</p>
+
+          <div class="maps clearfix">
+            <div class="map-card">
+              <img src="images/map_ny.jpg" alt="New York map placeholder">
+              <p class="map-caption">New York</p>
+            </div>
+
+            <div class="map-card">
+              <img src="images/map_milan.jpg" alt="Milan map placeholder">
+              <p class="map-caption">Milan</p>
+            </div>
+          </div>
+
+          <ul class="footer-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CLIENTS</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /.wrap -->
+    </div><!-- /.footer-top -->
+
+    <div class="footer-bottom">
+      <div class="wrap">
+        <p class="copyright">© COPYRIGHT 2025 PRESSCAFE &nbsp; | &nbsp; WEB DEVELOPMENT BY [YOUR NAME HERE]</p>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
