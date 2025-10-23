@@ -1,88 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PressCafe</title>
+
+  <!-- Google fonts used in the mockup -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Lora&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="PressCafe Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CLIENTS</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
-        <li><a href="#">FAQS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- BANNER -->
-  <section class="banner">
-    <img src="images/mainbanner.jpg" alt="Banner Image smiling woman at desk with notebook">
-    <div class="banner-text">
-      <h1>PRINT YOUR BOOK <span>WHILE YOU WAIT</span></h1>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <main>
-    <section class="what-you-get">
-      <h2>WHAT YOU WILL GET</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="images/services01.jpg" alt="Expert Writing Advice">
-          <h3>Expert Writing Advice</h3>
-          <p>When you sign up with us, you immediately get an independent professional who has been in the writing industry for many years. This includes all aspects of the process from text preparation, proofreading, and layout, to printing.</p>
-        </div>
-
-        <div class="card">
-          <img src="images/services02.jpg" alt="Editing Support">
-          <h3>Editing Support</h3>
-          <p>Everyone knows that writing is just the end of the journey. Once the book is complete, PressCafe offers free grammar and punctuation review. Then we get it ready for print and check the printed version.</p>
-        </div>
-
-        <div class="card">
-          <img src="images/services03.jpg" alt="Professional Printing">
-          <h3>Professional Printing</h3>
-          <p>At PressCafe, we make sure your finished product is polished to perfection. We offer many options for paper, binding, and finish to achieve the desired effect.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <img src="images/logo2.png" alt="PressCafe Logo">
-        <p>Where your dream project becomes a reality</p>
-        <p>1016 Strada Ottubre, Via Vergine,<br>Milano, 70-B Italia</p>
-        <p>+39 722 786 8799<br>customercare@presscafe.it</p>
+  <!-- top header -->
+  <header class="site-header">
+    <div class="wrap clearfix">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="PressCafe logo"></a>
       </div>
 
-      <div class="footer-right">
-        <p>AT PRESSCAFE WE CAN PRINT YOUR BOOK WHILE YOU WAIT AT OUR <strong>COMFORTABLE</strong> AND <strong>IMMERSIVE</strong> OUTLETS</p>
-        <div class="map-cards">
-          <div class="map-card">
-            <img src="images/map_ny.jpg" alt="New York Map">
-            <p>New York</p>
-          </div>
-          <div class="map-card">
-            <img src="images/map_milan.jpg" alt="Milan Map">
-            <p>Milan</p>
-          </div>
-        </div>
-        <ul class="footer-nav">
+      <nav class="main-nav">
+        <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="#">SERVICES</a></li>
           <li><a href="#">CLIENTS</a></li>
@@ -90,9 +28,101 @@
           <li><a href="#">FAQS</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / banner: full width background -->
+  <section class="hero">
+    <!-- background image is set in CSS to cover and position -->
+    <div class="hero-overlay">
+      <div class="wrap">
+        <h1 class="hero-title">PRINT YOUR BOOK</h1>
+        <p class="hero-sub">WHILE YOU WAIT</p>
       </div>
     </div>
-    <p class="copyright">© COPYRIGHT 2025 PRESSCAFE | WEB DEVELOPMENT BY [YOUR NAME HERE]</p>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="wrap main-content">
+
+      <section class="what-you-get">
+        <h2>WHAT YOU WILL GET</h2>
+
+        <div class="cards clearfix">
+          <article class="card">
+            <img src="images/services01.jpg" alt="Expert writing advice">
+            <h3>Expert writing advice</h3>
+            <p>When you sign up with us, you immediately get advice from a professional who has been in the writing industry for many years. This includes all aspects of the process from editing to printing.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/services02.jpg" alt="Editing support">
+            <h3>Editing Support</h3>
+            <p>We run a three-step editing audit that starts with grammar and punctuation checks, continues with consistency and style, then we check the printed proof.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/services03.jpg" alt="Professional printing">
+            <h3>Professional Printing</h3>
+            <p>Choose paper, binding and finish options. We print to professional standards so your book looks its best the moment it's in your hands.</p>
+          </article>
+        </div>
+      </section>
+
+    </div> <!-- .wrap -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="wrap clearfix">
+
+        <div class="footer-left">
+          <img src="images/logo2.png" alt="PressCafe logo" class="footer-logo">
+          <p class="muted">Where your dream project becomes a reality</p>
+          <address>
+            1016 Strada Ottubre, Via Vergine,<br>
+            Milano, 70-B Italia
+          </address>
+          <p>+39 722 786 8799<br>customercare@presscafe.it</p>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-blurb">AT PRESSCAFE WE CAN PRINT YOUR BOOK WHILE YOU WAIT AT OUR <strong>COMFORTABLE</strong> AND <strong>IMMERSIVE</strong> OUTLETS</p>
+
+          <div class="maps clearfix">
+            <div class="map-card">
+              <img src="images/map_ny.jpg" alt="New York map placeholder">
+              <p class="map-caption">New York</p>
+            </div>
+
+            <div class="map-card">
+              <img src="images/map_milan.jpg" alt="Milan map placeholder">
+              <p class="map-caption">Milan</p>
+            </div>
+          </div>
+
+          <ul class="footer-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CLIENTS</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /.wrap -->
+    </div><!-- /.footer-top -->
+
+    <div class="footer-bottom">
+      <div class="wrap">
+        <p class="copyright">© COPYRIGHT 2025 PRESSCAFE &nbsp; | &nbsp; WEB DEVELOPMENT BY [YOUR NAME HERE]</p>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
